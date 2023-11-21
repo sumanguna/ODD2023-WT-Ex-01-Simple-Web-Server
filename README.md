@@ -22,8 +22,36 @@ Testing the webserver.
 
 ## PROGRAM:
 
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+content= """
+<html>
+<head>
+</head>
+<body>
+<h1>Welcome</h1>
+</body>
+</html>
+"""
+
+class HelloHandler(BasedHTTPRequestHandler) :
+    def do_GET (self) :
+        self.send response (200)
+        self.send_header('Content.encode())
+
+
+server_address= ('',80)
+httpd = HTTPServer (server_address, HelloHandler)
+http.server_forver()
+
+
+
 
 ## OUTPUT:
+![Screenshot 2023-11-21 183320](https://github.com/sumanguna/ODD2023-WT-Ex-01-Simple-Web-Server/assets/146914442/a7bcf56c-cea4-413d-98d6-546d0826222f)
+
+
+
 
 
 ## RESULT:
