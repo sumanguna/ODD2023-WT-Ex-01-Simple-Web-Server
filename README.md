@@ -21,10 +21,9 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
-``
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-content= """
+content="""
 <html>
 <head>
 </head>
@@ -33,17 +32,15 @@ content= """
 </body>
 </html>
 """
-
-class HelloHandler(BasedHTTPRequestHandler) :
-    def do_GET (self) :
-        self.send response (200)
-        self.send_header('Content.encode())
+class HelloHandler (BaseHTTPRequestHandler):
+    def do_GET(self):
 
 
-server_address= ('',80)
-httpd = HTTPServer (server_address, HelloHandler)
-http.server_forver()
-``
+        self.send  (200)
+        self.send_header('content-type', 'text/html; charset=utf-8')
+        self.end_headers()
+        self.wfile.write(content.encode())
+
 
 
 
