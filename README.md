@@ -21,6 +21,7 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
+```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content="""
 <html>
@@ -39,6 +40,7 @@ class HelloHandler (BaseHTTPRequestHandler):
         self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
+```
 ## OUTPUT:
 ![Alt text](<Screenshot 2023-11-21 183320.png>)
 
