@@ -1,4 +1,4 @@
-# Ex-01-Simple-Web-Server
+@# Ex-01-Simple-Web-Server
 ## Date:
 
 ## AIM:
@@ -21,6 +21,7 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
+
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
@@ -47,8 +48,10 @@ http.server_forver()
 
 
 
+
 ## OUTPUT:
-![Screenshot 2023-11-21 183320](https://github.com/sumanguna/ODD2023-WT-Ex-01-Simple-Web-Server/assets/146914442/a7bcf56c-cea4-413d-98d6-546d0826222f)
+![Alt text](<Screenshot 2023-11-21 183320.png>)
+
 
 
 
